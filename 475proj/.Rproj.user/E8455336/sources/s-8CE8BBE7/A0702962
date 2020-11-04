@@ -1,0 +1,32 @@
+{
+    "id": "A0702962",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1604448941924.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "precinct_house.texas.dropped",
+        "caption": "precinct_house.texas.dropped",
+        "totalObservations": "25591",
+        "displayedObservations": "25591",
+        "variables": "28",
+        "cacheKey": "CEE5995E",
+        "object": "precinct_house.texas.dropped",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=precinct_house.texas.dropped&cache_key=CEE5995E&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 866101342721467712,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1604448941924,
+    "read_only": false,
+    "read_only_alternatives": []
+}
