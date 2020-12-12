@@ -44,7 +44,6 @@ results <- st_set_geometry(results, NULL)
 
 write.csv(results,"DistrictPrecinctIntersectionsR.csv")
 
-
 #test whether the aggregation is all 1s (no % missing)
 test <- aggregate(x = results$intesecting,                # Specify data column
                   by = list(results$PCTKEY),              # Specify group indicator
