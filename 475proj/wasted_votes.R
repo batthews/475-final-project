@@ -12,6 +12,6 @@ region_effic.1$wastedD = region_effic.1$DVOTE
 region_effic.1$wastedD[which(region_effic.1$PTY == "D")] = region_effic.1$DVOTE[which(region_effic.1$PTY == "D")] - (region_effic.1$TTL_VOTES[which(region_effic.1$PTY == "D")]/2)
 region_effic.1$wastedR = region_effic.1$RVOTE
 region_effic.1$wastedR[which(region_effic.1$PTY == "R")] = region_effic.1$RVOTE[which(region_effic.1$PTY == "R")] - (region_effic.1$TTL_VOTES[which(region_effic.1$PTY == "R")]/2)
-effic <- (sum(region_effic.1$wastedD)-sum(region_effic.1$wastedR))/sum(region_effic.1$TTL_VOTES)
+effic <- (sum(region_effic.1$wastedD)-sum(region_effic.1$wastedR))/sum(region_effic.1$TTL_VOTES)*100
 wastedD <- sum(region_effic.1$wastedD)
 wastedR <- sum(region_effic.1$wastedR)

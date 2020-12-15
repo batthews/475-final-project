@@ -1,7 +1,7 @@
 library(rgdal)
 library(rgeos)
 library(sf,quietly=TRUE)
-
+library(lwgeom)
 library(sf)
 library(tidyverse)
 region_group <- subset(region_group,select =c(NEW,PTY))
@@ -15,7 +15,7 @@ sf_temp <- sf_district %>% group_by(NEW) %>% summarise()
 
 sf_temp  <- merge(sf_temp ,region_group,by = "NEW")
 
-sf_temp$col <- "#FFFFFF"
+sf_temp$col <- "#FFFFFF" 
 sf_temp$col[sf_temp$PTY == "R"] <- "#FF0000"
 sf_temp$col[sf_temp$PTY == "C"] <- "#A901DB"
 sf_temp$col[sf_temp$PTY == "D"] <- "#2E64FE"

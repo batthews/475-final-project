@@ -29,3 +29,4 @@ regional_demographics$majority <- 'W'
 regional_demographics$majority[which(regional_demographics$percent_nonwhite > 0.50)] = 'M'
 
 regional_demographics <- subset(regional_demographics,select = c(Region,majority,percent_nonwhite))
+write.csv(regional_demographics,"RegionalDemographics.csv")

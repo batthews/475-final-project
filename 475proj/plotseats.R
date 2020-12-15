@@ -5,10 +5,10 @@ testm$percent[which(testm$PTY == "D")] = 1-testm$percent[which(testm$PTY == "D")
 #testm$percent[which(testm$PTY == "R")] = testm$percent[which(testm$PTY == "R")] -0.5 
 #plot(testm$percent, testm$y, col=testm$percent)
 
-fun_color_range <- colorRampPalette(c("blue", "red"))   # Apply colorRampPalette
+range <- colorRampPalette(c("blue", "red"))   # Apply colorRampPalette
 
 x <-arrange(testm,testm$percent)
-my_colors <- fun_color_range(100) 
+my_colors <- range(100) 
 
 ats <- c(0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1)
 

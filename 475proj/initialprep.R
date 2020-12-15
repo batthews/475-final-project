@@ -56,5 +56,5 @@ df_final <- aggregate(x = district_votes$votes, by = list(district_votes$party,d
 colnames(df_final)<- c("PTY","DISTRICT_N","VOTES")
 
 write.csv(df_final,"DistrictVoterData.csv")
-
+df_final %>% group_by(DISTRICT_N) %>% count
 
